@@ -112,6 +112,7 @@ aside {
             }
         }
     }
+    @black: #000;
     @media (min-width: 768px) {
         background-color: transparent;
         border-color: fade(white, 30%);
@@ -124,9 +125,9 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: fade(white, 70%);
+            color: fade(@black, 70%);
             &:hover {
-                color: white;
+                color: @theme-primary;
             }
         }
         &.affix {
@@ -159,7 +160,7 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../assets/images/classic-fr-bg.png');
+    background-image: url('../images/classic-fr-bg.png');
     text-align: center;
     color: white;
     .header-content {
