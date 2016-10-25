@@ -369,6 +369,54 @@ fieldset[disabled] .btn-primary.active {
   color: #4b54a4;
   background-color: white;
 }
+.btn-alt {
+  color: #4b54a4;
+  background-color: white;
+  border-color: #4b54a4;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.btn-alt:hover,
+.btn-alt:focus,
+.btn-alt.focus,
+.btn-alt:active,
+.btn-alt.active,
+.open > .dropdown-toggle.btn-alt {
+  color: #4b54a4;
+  background-color: #f2f2f2;
+  border-color: #40478c;
+}
+.btn-alt:active,
+.btn-alt.active,
+.open > .dropdown-toggle.btn-alt {
+  background-image: none;
+}
+.btn-alt.disabled,
+.btn-alt[disabled],
+fieldset[disabled] .btn-alt,
+.btn-alt.disabled:hover,
+.btn-alt[disabled]:hover,
+fieldset[disabled] .btn-alt:hover,
+.btn-alt.disabled:focus,
+.btn-alt[disabled]:focus,
+fieldset[disabled] .btn-alt:focus,
+.btn-alt.disabled.focus,
+.btn-alt[disabled].focus,
+fieldset[disabled] .btn-alt.focus,
+.btn-alt.disabled:active,
+.btn-alt[disabled]:active,
+fieldset[disabled] .btn-alt:active,
+.btn-alt.disabled.active,
+.btn-alt[disabled].active,
+fieldset[disabled] .btn-alt.active {
+  background-color: white;
+  border-color: #4b54a4;
+}
+.btn-alt .badge {
+  color: white;
+  background-color: #4b54a4;
+}
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   border: none;
