@@ -80,29 +80,6 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Atlantic Canada's Quality Carrier</h1>
-                <hr>
-                <p>Based in Atlantic Canada, we specialize in Flatbed, Overdimensional and  Intermodal Transportation across the nation.</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
-            </div>
-        </div>
-    </header> -->
-
-    <!-- <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h1 class="section-heading">JOIN OUR COMPANY TODAY!</h1>
-                    <hr class="light">
-                    <p class="text-faded">Located in Dartmouth, Nova Scotia, Classic Freight Systems has been in operation for over <b>10 years</b>. We supply superior service in flat deck, intermodal transport and controlled warehousing. By recruitng qualifed, motivated and professional individuals, we always deliver customer service, safe practices and always on time. We encourage employee development by offering educational seminars, new industry standard and innovative data technology that allows us to track both customer product and each drivers con nuous improvement. Our generous compensation program includes group benefits, life and disability insurance and giving employees the opportunity for advancement through mentorship and coaching programs.</p>
-                    <a href="#" class="page-scroll btn btn-default btn-xl sr-button">Apply Today!</a>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <aside>
     </aside>
     <aside class="bg-primary">
@@ -112,8 +89,64 @@
             </div>
         </div>
     </aside>
-
-    <section class="no-padding" id="portfolio">
+    <aside>
+          <div class="container">
+               <h3>Get in touch</h3>
+               <h4>Send us an email or complete the web form.</h4>
+           </div>
+    </aside>
+    <section>
+        <div class="container">
+            <div class="container">
+                <form method="POST" action="http://formspree.io/YOUREMAILHERE">
+                        <div class="row">
+                               <div class="col-sm-6 col-md-6">
+                                    <label>Name</label>
+                                    <input name="name" id="name" class="form-control" type="text" value="">
+                               </div>
+                               <div class="col-sm-6 col-md-6">
+                                    <label>E-mail</label>
+                                    <input name="email" id="email" class="form-control" type="email" value="">
+                               </div>
+                          </div>
+                          <div class="row">
+                              <div>
+                                  <label>Select Person/Department/Division</label>
+                                  <select name="contact-person">
+                                      <option value="name1">Name 1 / Division 1</option>
+                                      <option value="name2">Name 2 / Division 2</option>
+                                      <option value="name3">Name 3 / Division 3</option>
+                                      <option value="name4">Name 4 / Division 4</option>
+                                  </select>
+                            </div>
+                        </div>
+                          <div class="row">
+                               <div class="col-sm-12 col-md-12">
+                                    <label>Subject</label>
+                                    <input name="_subject" id="subject" class="form-control" type="text">
+                               </div>
+                          </div>
+                          <div class="row">
+                               <div class="col-sm-12 col-md-12">
+                                    <label>Message</label>
+                                    <textarea name="message" id="message" rows="8" class="form-control"></textarea>
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="_gotcha" style="display:none"></div>
+                                    <input type="hidden" name="_next" value="contact/thanks.html">
+                               </div>
+                               <div class="col-sm-12 col-md-12"><br/>
+                                    <button class="btn btn-primary" type="submit">Submit Message</button> <span id="notice" class="alert alert-warning alert-dismissable hidden" style="margin-left:20px;"></span> </div>
+                          </div>
+                  <!-- <select name="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select> -->
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-4 col-sm-6">
@@ -208,7 +241,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <aside class="bg-dark">
         <div class="container text-center">
@@ -235,18 +268,6 @@
     </section>
 
     <footer>
-          <section class="twitter_feed_wrapper">
-               <div class="container">
-                    <div class="row wow animated fadeInUp">
-                         <div class="twitter_feed_icon col-sm-1 col-md-1"><a href="http://www3.gehealthcare.ca/" target="_blank"><i class="fa fa-comment-o"></i></a></div>
-                         <div class="col-sm-11 col-md-11">
-                              <blockquote>
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                                   — <b>John Doe</b>, <i>General Manager</i>, <a href="#" target="_blank">Quality Trucking Inc.</a></blockquote>
-                         </div>
-                    </div>
-               </div>
-          </section>
           <section id="footer_teasers_wrapper">
                <div class="container">
                  <div class="row text-center">
