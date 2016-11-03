@@ -145,7 +145,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../images/classic-fr-bg.png');
+  background-image: url('../images/classic-fr-trans-bg.png');
   text-align: center;
   color: white;
 }
@@ -166,8 +166,8 @@ header .header-content .header-content-inner hr {
   margin: 30px auto;
 }
 header .header-content .header-content-inner p {
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  color: #000;
   font-size: 16px;
   margin-bottom: 50px;
 }

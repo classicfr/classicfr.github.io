@@ -26,6 +26,13 @@
     <link rel="stylesheet" href="../assets/css/creative.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/custom.css" type="text/css">
     <link rel="shortcut icon" href="../assets/images/favicon.png">
+    <style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,11 +40,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>  -->
-
 </head>
 
 <body id="page-top">
@@ -52,7 +54,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="../index.html"><img src="../assets/images/classic-freight-logo.png" alt="Classic Freight Systems Ltd." height="76" width="200"></a>
+                <a class="navbar-brand page-scroll" href="../index.html"><img src="../assets/images/classic-freight-logo-30h.png" alt="Classic Freight Systems Ltd." height="30"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -100,53 +102,46 @@
     </aside>
     <section>
         <div class="container">
-            <div class="container">
-                <form method="POST" action="http://formspree.io/YOUREMAILHERE">
-                        <div class="row">
-                               <div class="col-sm-6 col-md-6">
-                                    <label>Name</label>
-                                    <input name="name" id="name" class="form-control" type="text" value="">
-                               </div>
-                               <div class="col-sm-6 col-md-6">
-                                    <label>E-mail</label>
-                                    <input name="email" id="email" class="form-control" type="email" value="">
-                               </div>
-                          </div>
-                          <div class="row">
-                              <div>
-                                  <label>Select Person/Department/Division</label>
-                                  <select name="contact-person">
-                                      <option value="name1">Name 1 / Division 1</option>
-                                      <option value="name2">Name 2 / Division 2</option>
-                                      <option value="name3">Name 3 / Division 3</option>
-                                      <option value="name4">Name 4 / Division 4</option>
-                                  </select>
-                            </div>
+            <form method="POST" action="http://formspree.io/YOUREMAILHERE">
+                    <div class="row">
+                           <div class="col-sm-6 col-md-6">
+                                <label>Name</label>
+                                <input name="name" id="name" class="form-control" type="text" value="">
+                           </div>
+                           <div class="col-sm-6 col-md-6">
+                                <label>E-mail</label>
+                                <input name="email" id="email" class="form-control" type="email" value="">
+                           </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-12 col-md-12">
+                              <label>Select Person/Department/Division</label>
+                              <select name="contact-person">
+                                  <option value="name1">Name 1 / Division 1</option>
+                                  <option value="name2">Name 2 / Division 2</option>
+                                  <option value="name3">Name 3 / Division 3</option>
+                                  <option value="name4">Name 4 / Division 4</option>
+                              </select>
                         </div>
-                          <div class="row">
-                               <div class="col-sm-12 col-md-12">
-                                    <label>Subject</label>
-                                    <input name="_subject" id="subject" class="form-control" type="text">
-                               </div>
-                          </div>
-                          <div class="row">
-                               <div class="col-sm-12 col-md-12">
-                                    <label>Message</label>
-                                    <textarea name="message" id="message" rows="8" class="form-control"></textarea>
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="_gotcha" style="display:none"></div>
-                                    <input type="hidden" name="_next" value="contact/thanks.html">
-                               </div>
-                               <div class="col-sm-12 col-md-12"><br/>
-                                    <button class="btn btn-primary" type="submit">Submit Message</button> <span id="notice" class="alert alert-warning alert-dismissable hidden" style="margin-left:20px;"></span> </div>
-                          </div>
-                  <!-- <select name="cars">
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="fiat">Fiat</option>
-                  <option value="audi">Audi</option>
-                </select> -->
-                </form>
-            </div>
+                    </div>
+                      <div class="row">
+                           <div class="col-sm-12 col-md-12">
+                                <label>Subject</label>
+                                <input name="_subject" id="subject" class="form-control" type="text">
+                           </div>
+                      </div>
+                      <div class="row">
+                           <div class="col-sm-12 col-md-12">
+                                <label>Message</label>
+                                <textarea name="message" id="message" rows="8" class="form-control"></textarea>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="_gotcha" style="display:none"></div>
+                                <input type="hidden" name="_next" value="contact/thanks.html">
+                           </div>
+                           <div class="col-sm-12 col-md-12"><br/>
+                                <button class="btn btn-primary" type="submit">Submit Message</button> <span id="notice" class="alert alert-warning alert-dismissable hidden" style="margin-left:20px;"></span>
+                            </div>
+                      </div>
+            </form>
         </div>
     </section>
     <!-- <section class="no-padding" id="portfolio">
@@ -246,66 +241,54 @@
         </div>
     </section> -->
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h1><i class="fa fa-phone fa-1x sr-contact"></i> 1 (888) 387-8883</h1>
-            </div>
-        </div>
-    </aside>
-
-    <section id="map">
+    <section>
       <div id="map"></div>
-          <script>
-            function initMap() {
-              var mapDiv = document.getElementById('map');
-              var map = new google.maps.Map(mapDiv, {
-                  center: {lat: 44.540, lng: -78.546},
-                  zoom: 8
-              });
-            }
+        <script>
+          function initMap() {
+            var classic_fr = {lat: 44.706701, lng: -63.592313};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 4,
+              center: classic_fr
+            });
+            var marker = new google.maps.Marker({
+              position: classic_fr,
+              map: map
+            });
+          }
         </script>
         <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_0WZ301faJcAjaR1NCj7NGwHzkXwu3p0&callback=initMap">
         </script>
     </section>
 
     <footer>
-        <section id="footer_teasers_wrapper">
-             <div class="container">
-               <div class="row text-center">
-                    <div class="footer_teaser col-sm-4 col-md-4">
-                      <h5>For Sales Inquiries</h5>
-                      <p><i class="fa fa-user"></i> <b>Andre</b> | <em>Sales Manager</em></p>
-                      <p><a href="tel:+1 (902) XXX-XXXX"><i class="fa fa-phone"></i> <b>+1 (902) XXX-XXXX</a></b></p>
-                      <p><a href="mailto:sales@classicfreight.ca"><i class="fa fa-envelope"></i> <b>sales@classicfreight.ca</a></b></p>
-                    </div>
-                    <div class="footer_teaser col-sm-4 col-md-4">
-                      <h4>Classic Freight Systems Ltd.</h4>
-                      <h5>Atlantic Canada's Quality Carrier</h5>
-                      <p><i class="fa fa-map-marker"></i>&nbsp;50 Joseph Zatzman Dr, Darmouth, NS B3B 1N8</p>
-                      <p><i class="fa fa-phone"></i>&nbsp;1-888-387-8883</p>
-                    </div>
-                    <div class="footer_teaser col-sm-4 col-md-4">
-                      <h5>For Employment Inquiries</h5>
-                      <p><i class="fa fa-user"></i> <b>Name</b> | <em>Position</em></p>
-                      <p><a href="tel:+1 (902) XXX-XXXX"><i class="fa fa-phone"></i> <b>+1 (902) XXX-XXXX</a></b></p>
-                      <p><a href="mailto:jobs@classicfreight.ca"><i class="fa fa-envelope"></i> <b>jobs@classicfreight.ca</a></b></p>
-                    </div>
-               </div>
-             </div>
-        </section>
-          <section class="copyright">
+          <section id="footer_teasers_wrapper">
                <div class="container">
-                    <div class="row">
-                        <div class="footer_social text-center">
-                          <a href="https://www.facebook.com/Classicfreightsystems2011Ltd/"><i class="fa fa-facebook fa-2x"></i></a>&nbsp; &nbsp; <a href=""><i class="fa fa-twitter fa-2x"></i></a>&nbsp; &nbsp;<a href=""><i class="fa fa-linkedin fa-2x"></i></a>
+                 <div class="row text-center">
+                      <div class="footer_teaser col-sm-4 col-md-4">
+                        <h5>For Sales Inquiries</h5>
+                        <p><i class="fa fa-user"></i> <b>Andre</b> | <em>Sales Manager</em></p>
+                        <p><a href="tel:+1 (902) XXX-XXXX"><i class="fa fa-phone"></i> <b>+1 (902) XXX-XXXX</a></b></p>
+                        <p><a href="mailto:sales@classicfreight.ca"><i class="fa fa-envelope"></i> <b>sales@classicfreight.ca</a></b></p><br>
+                      </div>
+                      <div class="footer_teaser col-sm-4 col-md-4">
+                        <h4>Classic Freight Systems Ltd.</h4>
+                        <h5>Atlantic Canada's Quality Carrier</h5>
+                        <p><i class="fa fa-map-marker"></i>&nbsp;50 Joseph Zatzman Dr, Darmouth, NS B3B 1N8</p>
+                        <p><i class="fa fa-phone"></i>&nbsp;1-888-387-8883</p><br>
+                        <div class="text-center">
+                            <img src="../assets/images/thrsc-atlantic.png" alt="Employer of Choice" height="100"><br><br>
+                            <a href="https://www.facebook.com/Classicfreightsystems2011Ltd/"><i class="fa fa-facebook fa-2x"></i></a>&nbsp; &nbsp; <a href=""><i class="fa fa-twitter fa-2x"></i></a>&nbsp; &nbsp;<a href=""><i class="fa fa-linkedin fa-2x"></i></a><br><br>
+                            <p>&copy;2016 Classic Freight Systems Ltd. All rights reserved.</p><br>
                         </div>
-                    </div>
-                    <div class="row">
-                      <br><br>
-                        <div class="text-center"> Copyright &copy;2016 all rights reserved </div>
-                    </div>
+                      </div>
+                      <div class="footer_teaser col-sm-4 col-md-4">
+                        <h5>For Employment Inquiries</h5>
+                        <p><i class="fa fa-user"></i> <b>Name</b> | <em>Position</em></p>
+                        <p><a href="tel:+1 (902) XXX-XXXX"><i class="fa fa-phone"></i> <b>+1 (902) XXX-XXXX</a></b></p>
+                        <p><a href="mailto:jobs@classicfreight.ca"><i class="fa fa-envelope"></i> <b>jobs@classicfreight.ca</a></b></p>
+                      </div>
+                 </div>
                </div>
           </section>
      </footer>
