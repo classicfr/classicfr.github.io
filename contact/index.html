@@ -90,67 +90,79 @@
     <aside class="bg-primary">
         <div class="container text-left">
             <div class="call-to-action">
-                <h2>Contact Us</h2>
+                <h2>Contact Us - Employment Inquiry</h2>
+                <h4 class="text-faded">Please complete the form below for ALL employment inquiries</h4>
             </div>
         </div>
     </aside>
     <aside>
           <div class="container">
-               <h3>Get in touch</h3>
-               <h4>Send us an email or complete the web form.</h4>
+               <h3>For Sales Related Inquiries</h3>
+               <h4>Please <a href="mailto:sales@classicfreight.ca">email</a> Andre Toupin</h4>
            </div>
     </aside>
     <section>
         <div class="container">
-            <form method="POST" action="http://formspree.io/YOUREMAILHERE">
-                    <div class="row">
-                           <div class="col-sm-6 col-md-6">
-                                <label>Name</label>
-                                <input name="name" id="name" class="form-control" type="text" value="">
-                           </div>
-                           <div class="col-sm-6 col-md-6">
-                                <label>E-mail</label>
-                                <input name="email" id="email" class="form-control" type="email" value="">
-                           </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-sm-12 col-md-12">
-                              <label>Years of Flat Bed Experience</label>
-                              <select name="contact-person">
-                                  <option value="name1">0-1</option>
-                                  <option value="name2">1-3</option>
-                                  <option value="name3">3-5</option>
-                                  <option value="name4">5-10</option>
-                                  <option value="name4">More than 10</option>
-                              </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12">
-                            <label>US Clearance/Passport</label>
-                            <select name="contact-person">
-                                <option value="name1">Yes</option>
-                                <option value="name2">No</option>
-                            </select>
-                      </div>
+            <form method="POST" action="https://formspree.io/YOUREMAILHERE">
+                <div class="row">
+                       <div class="col-sm-6 col-md-6">
+                            <label>Name</label>
+                            <input name="name" id="name" class="form-control" type="text" value="">
+                       </div>
+                       <div class="col-sm-6 col-md-6">
+                            <label>E-mail</label>
+                            <input name="email" id="email" class="form-control" type="email" value="">
+                       </div>
                   </div>
-                      <div class="row">
-                           <div class="col-sm-12 col-md-12">
-                                <label>Subject</label>
-                                <input name="_subject" id="subject" class="form-control" type="text">
-                           </div>
-                      </div>
-                      <div class="row">
-                           <div class="col-sm-12 col-md-12">
-                                <label>Message</label>
-                                <textarea name="message" id="message" rows="8" class="form-control"></textarea>
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="_gotcha" style="display:none"></div>
-                                <input type="hidden" name="_next" value="contact/thanks.html">
-                           </div>
-                           <div class="col-sm-12 col-md-12"><br/>
-                                <button class="btn btn-primary" type="submit">Submit Message</button> <span id="notice" class="alert alert-warning alert-dismissable hidden" style="margin-left:20px;"></span>
-                            </div>
-                      </div>
+                  <div class="row">
+                      <div class="col-sm-6 col-md-6">
+                          <label>Years of Flat Bed Experience</label>
+                          <select name="experience">
+                              <option value="name1">0-1</option>
+                              <option value="name2">1-3</option>
+                              <option value="name3">3-5</option>
+                              <option value="name4">5-10</option>
+                              <option value="name4">More than 10</option>
+                          </select>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <label>US Clearance/Passport</label>
+                        <select name="passport">
+                            <option value="name1">Yes</option>
+                            <option value="name2">No</option>
+                        </select>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <label>Please list any incidents, accidents, or licence suspensions in the past 24 months</label>
+                        <textarea name="incidents" id="incidents" rows="4" class="form-control"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <label>Please list previous employers <b>as a driver</b></label>
+                        <textarea name="employers" id="employers" rows="4" class="form-control"></textarea>
+                  </div>
+                </div>
+                  <div class="row">
+                       <div class="col-sm-12 col-md-12">
+                            <!-- <label>Subject</label> -->
+                            <input name="_subject" id="subject" class="form-control" type="hidden" value="New Employment Inquiry">
+                       </div>
+                  </div>
+                  <div class="row">
+                       <div class="col-sm-12 col-md-12">
+                           <!-- When are you available to start? What is your reason for leaving your current employer? -->
+                            <label>Availability and reason for inquiry</label>
+                            <textarea name="message" id="message" rows="4" class="form-control" value=""></textarea>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="_gotcha" style="display:none"></div>
+                            <input type="hidden" name="_next" value="thanks.html">
+                       </div>
+                       <div class="col-sm-12 col-md-12"><br/>
+                            <button class="btn btn-primary" type="submit">Submit Message</button> <span id="notice" class="alert alert-warning alert-dismissable hidden" style="margin-left:20px;"></span>
+                        </div>
+                  </div>
             </form>
         </div>
     </section>
@@ -277,7 +289,7 @@
                  <div class="row text-center">
                       <div class="footer_teaser col-sm-4 col-md-4">
                         <h5>For Sales Inquiries</h5>
-                        <p><i class="fa fa-user"></i> <b>Andre</b> | <em>Sales Manager</em></p>
+                        <p><i class="fa fa-user"></i> <b>Andre Toupin</b> | <em>Sales Manager</em></p>
                         <p><a href="tel:+1 (902) 481-3701"><i class="fa fa-phone"></i> <b>+1 (902) 481-3701 EXT 230</a></b></p>
                         <p><a href="mailto:sales@classicfreight.ca"><i class="fa fa-envelope"></i> <b>sales@classicfreight.ca</a></b></p><br>
                       </div>
