@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Classic Freight | Contact</title>
+    <title>Classic Freight | Employment Inquiry</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" type="text/css">
@@ -26,13 +26,6 @@
     <link rel="stylesheet" href="../assets/css/creative.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/custom.css" type="text/css">
     <link rel="shortcut icon" href="../assets/images/favicon.png">
-    <style>
-      #map {
-        width: 100%;
-        height: 400px;
-        background-color: grey;
-      }
-    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -90,43 +83,70 @@
     <aside class="bg-primary">
         <div class="container text-left">
             <div class="call-to-action">
-                <h2>Contact Us</h2>
+                <h2>Contact Us - Employment Inquiry</h2>
+                <h4 class="text-faded">Please complete the form below for ALL employment inquiries</h4>
             </div>
         </div>
     </aside>
-
     <section>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Please choose and option</h2>
-                    <hr class="light">
-                    <!-- <p class="text-faded">Start your career with Classic Freight Systems Ltd.</p><br><br> -->
-                    <a href="../contact/sales.html" class="page-scroll btn btn-primary btn-xl sr-button">Sales Inquiry</a>
-                    <a href="../contact/employment.html" class="page-scroll btn btn-alt btn-xl sr-button">Employment Inquiry</a>
-                </div>
-            </div>
+            <form method="POST" action="https://formspree.io/jobs@classicfreight.ca">
+                <input name="_subject" id="subject" class="form-control" type="hidden" value="New Employment Inquiry">
+                <div class="row">
+                       <div class="col-sm-6 col-md-6">
+                            <label>Name</label>
+                            <input name="name" id="name" class="form-control" type="text" value="" required>
+                       </div>
+                       <div class="col-sm-6 col-md-6">
+                            <label>E-mail</label>
+                            <input name="email" id="email" class="form-control" type="email" value="" required>
+                       </div>
+                  </div><br>
+                  <div class="row">
+                      <div class="col-sm-6 col-md-6">
+                          <label>Years of Flat Bed Experience</label>
+                          <select name="experience" class="form-control" required>
+                              <option value="name1">0-1</option>
+                              <option value="name2">1-3</option>
+                              <option value="name3">3-5</option>
+                              <option value="name4">5-10</option>
+                              <option value="name4">More than 10</option>
+                          </select>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <label>US Clearance/Passport</label>
+                        <select name="passport" class="form-control" required>
+                            <option value="name1">Yes</option>
+                            <option value="name2">No</option>
+                        </select>
+                  </div>
+              </div><br>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <label>Please list any incidents, accidents, or licence suspensions in the past 24 months</label>
+                        <textarea name="incidents" id="incidents" rows="4" class="form-control" required></textarea>
+                  </div>
+              </div><br>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <label>Please list previous employers <b>as a driver</b></label>
+                        <textarea name="employers" id="employers" rows="4" class="form-control" required></textarea>
+                  </div>
+              </div><br>
+              <div class="row">
+                   <div class="col-sm-12 col-md-12">
+                       <!-- When are you available to start? What is your reason for leaving your current employer? -->
+                        <label>Availability and reason for inquiry</label>
+                        <textarea name="message" id="message" rows="4" class="form-control" value=""></textarea>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="_gotcha" style="display:none"></div>
+                        <input type="hidden" name="_next" value="thanks.html">
+                   </div>
+                   <div class="col-sm-12 col-md-12"><br/>
+                        <button class="btn btn-primary" type="submit">Submit Message</button> <span id="notice" class="alert alert-warning alert-dismissable hidden" style="margin-left:20px;"></span>
+                    </div>
+              </div>
+        </form>
         </div>
-    </section>
-
-    <section>
-      <div id="map"></div>
-        <script>
-          function initMap() {
-            var classic_fr = {lat: 44.706701, lng: -63.592313};
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 4,
-              center: classic_fr
-            });
-            var marker = new google.maps.Marker({
-              position: classic_fr,
-              map: map
-            });
-          }
-        </script>
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_0WZ301faJcAjaR1NCj7NGwHzkXwu3p0&callback=initMap">
-        </script>
     </section>
 
     <footer>
