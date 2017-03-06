@@ -26,6 +26,10 @@ copyright {
   font-size: 13px;
 }
 
+hr.full {
+    max-width: 100%;
+}
+
 /* =Career Page elements
 -------------------------------------------------------------- */
 .career_teaser {
