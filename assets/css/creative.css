@@ -42,6 +42,13 @@ p {
   background-color: #222;
   color: white;
 }
+.bg-focus {
+  background-color: #ff6700;
+  color: white;
+}
+.text-black {
+  color: #000;
+}
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
