@@ -32,8 +32,17 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
+h3.focus {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+}
 p {
   font-size: 16px;
+}
+.right {
+  text-align: right;
 }
 .bg-primary {
   background-color: #1180c4;
@@ -41,6 +50,36 @@ p {
 .bg-dark {
   background-color: #222;
   color: white;
+}
+.bg-focus {
+  background-color: #ff6700;
+  color: white;
+}
+.bg-careers {
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-image: url('../images/classic-careers-banner.png');
+  color: white;
+  background-position: center center;
+  position: relative;
+}
+.text-black {
+  color: #000;
+}
+.text-focus {
+  color: #ff6700;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.text-thick {
+  font-weight: 600;
+  color: #1180c4;
 }
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
@@ -368,6 +407,54 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-primary .badge {
   color: #1180c4;
+  background-color: white;
+}
+.btn-focus {
+  color: white;
+  background-color: #ff6700;
+  border-color: #ff6700;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.btn-focus:hover,
+.btn-focus:focus,
+.btn-focus.focus,
+.btn-focus:active,
+.btn-focus.active,
+.open > .dropdown-toggle.btn-focus {
+  color: white;
+  background-color: #e65d00;
+  border-color: #db5900;
+}
+.btn-focus:active,
+.btn-focus.active,
+.open > .dropdown-toggle.btn-focus {
+  background-image: none;
+}
+.btn-focus.disabled,
+.btn-focus[disabled],
+fieldset[disabled] .btn-focus,
+.btn-focus.disabled:hover,
+.btn-focus[disabled]:hover,
+fieldset[disabled] .btn-focus:hover,
+.btn-focus.disabled:focus,
+.btn-focus[disabled]:focus,
+fieldset[disabled] .btn-focus:focus,
+.btn-focus.disabled.focus,
+.btn-focus[disabled].focus,
+fieldset[disabled] .btn-focus.focus,
+.btn-focus.disabled:active,
+.btn-focus[disabled]:active,
+fieldset[disabled] .btn-focus:active,
+.btn-focus.disabled.active,
+.btn-focus[disabled].active,
+fieldset[disabled] .btn-focus.active {
+  background-color: #ff6700;
+  border-color: #ff6700;
+}
+.btn-focus .badge {
+  color: #ff6700;
   background-color: white;
 }
 .btn-alt {
